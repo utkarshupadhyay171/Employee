@@ -52,7 +52,7 @@ public class EmployeeeServiceImple implements EmployeeeService {
 		return ResponseEntity.status(HttpStatus.ACCEPTED).body(employeeRepository.findAll(PageRequest.of(pageNumber, pageSize)).getContent());
 	}
 	
-//	Register employee function
+
 	public ResponseEntity<Employeee>register(Employeee employee,HttpServletResponse response){
 		logger.info("Add Employee Service Imple class running");
 		employeeRepository.save(employee);
