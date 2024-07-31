@@ -41,7 +41,7 @@ public class EmployeeeServiceImple implements EmployeeeService {
 	    Addresss address = new Addresss();
 	    address.setCity(addressDTO.getCity());
 	    address.setState(addressDTO.getState());
-	    // set other fields as necessary
+	    
 	    
 	    System.out.println(address);
 	    return address;
