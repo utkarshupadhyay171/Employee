@@ -1,0 +1,6 @@
+09:47:14:267 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.controll.EmployeController-Delete Employee address controller running
+09:47:14:314 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Delete Employee address Service Imple class running
+09:47:53:694 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.controll.EmployeController-Delete Employee address controller running
+09:47:53:697 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Delete Employee address Service Imple class running
+09:47:55:774 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.controll.EmployeController-Delete Employee address controller running
+09:47:55:798 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Delete Employee address Service Imple class running

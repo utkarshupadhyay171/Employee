@@ -1,0 +1,62 @@
+09:26:03:583 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3191 ms
+09:26:03:707 [main] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+09:26:04:044 [main] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+09:26:04:051 [main] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+09:26:04:086 [main] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration-H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09:26:04:505 [main] INFO  org.hibernate.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+09:26:04:649 [main] INFO  org.hibernate.Version-HHH000412: Hibernate ORM core version 6.5.2.Final
+09:26:04:730 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator-HHH000026: Second-level cache disabled
+09:26:05:314 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
+09:26:05:890 [main] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+09:26:06:707 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09:26:06:712 [main] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+09:26:06:719 [main] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-script-source], use [javax.persistence.schema-generation.drop-script-source] instead
+09:26:06:719 [main] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-source], use [javax.persistence.schema-generation.drop-source] instead
+09:26:06:732 [main] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
+09:26:06:774 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:26:07:258 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory-Hibernate is in classpath; If applicable, HQL parser will be used.
+09:26:07:891 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:26:08:738 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-808"]
+09:26:08:778 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 808 (http) with context path '/'
+09:26:08:792 [main] INFO  com.cts.emp.Employe.EmployeApplication-Started EmployeApplication in 9.23 seconds (process running for 11.096)
+09:26:14:125 [http-nio-808-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:26:14:126 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+09:26:14:129 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+09:26:15:542 [http-nio-808-exec-4] INFO  org.springdoc.api.AbstractOpenApiResource-Init duration for springdoc-openapi is: 1034 ms
+09:26:43:060 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee Service Imple class running
+09:26:43:240 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.controll.EmployeController-Add Employee controller running time 180 ms
+09:27:14:875 [http-nio-808-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.cts.emp.Employe.entity.Employeee` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('string')]
+09:27:37:376 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.controll.EmployeController-Update Employee address controller running
+09:27:37:391 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Update Employee address Service Imple class running
+09:28:06:980 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee permanent address Service Imple class running
+09:28:07:027 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.controll.EmployeController-Add Employee address controller running time 46 ms
+09:28:11:287 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee permanent address Service Imple class running
+09:28:29:753 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.controll.EmployeController-Update Employee address controller running
+09:28:29:754 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Update Employee address Service Imple class running
+09:30:55:442 [main] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 18704 (C:\Users\2273297\Downloads\Employe\Employe\target\classes started by 2273297 in C:\Users\2273297\Downloads\Employe\Employe)
+09:30:55:464 [main] INFO  com.cts.emp.Employe.EmployeApplication-No active profile set, falling back to 1 default profile: "default"
+09:30:57:235 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+09:30:57:237 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+09:30:57:299 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.AddresssRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09:30:57:302 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.EmployeeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09:30:57:303 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 56 ms. Found 0 JDBC repository interfaces.
+09:30:57:330 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+09:30:57:333 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:30:57:405 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+09:30:58:725 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 808 (http)
+09:30:58:751 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-808"]
+09:30:58:757 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+09:30:58:758 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.25]
+09:30:58:932 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+09:30:58:937 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3363 ms
+09:30:59:047 [main] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+09:30:59:525 [main] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+09:30:59:529 [main] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+09:30:59:554 [main] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration-H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09:30:59:870 [main] INFO  org.hibernate.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+09:31:00:014 [main] INFO  org.hibernate.Version-HHH000412: Hibernate ORM core version 6.5.2.Final
+09:31:00:088 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator-HHH000026: Second-level cache disabled
+09:31:00:800 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
+09:31:01:369 [main] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+09:31:02:191 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09:31:02:198 [main] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead

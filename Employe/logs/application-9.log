@@ -1,0 +1,64 @@
+09:35:24:353 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+09:35:24:413 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 60 ms
+09:37:54:029 [main] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 14992 (C:\Users\2273297\Downloads\Employe\Employe\target\classes started by 2273297 in C:\Users\2273297\Downloads\Employe\Employe)
+09:37:54:041 [main] INFO  com.cts.emp.Employe.EmployeApplication-No active profile set, falling back to 1 default profile: "default"
+09:37:55:388 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+09:37:55:389 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+09:37:55:431 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.AddresssRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09:37:55:434 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.EmployeeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09:37:55:435 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+09:37:55:452 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+09:37:55:454 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:37:55:500 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+09:37:56:622 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 808 (http)
+09:37:56:647 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-808"]
+09:37:56:652 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+09:37:56:653 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.25]
+09:37:56:797 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+09:37:56:799 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 2650 ms
+09:37:56:876 [main] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+09:37:57:256 [main] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+09:37:57:262 [main] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+09:37:57:283 [main] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration-H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+09:37:57:566 [main] INFO  org.hibernate.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+09:37:57:691 [main] INFO  org.hibernate.Version-HHH000412: Hibernate ORM core version 6.5.2.Final
+09:37:57:763 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator-HHH000026: Second-level cache disabled
+09:37:58:362 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
+09:37:58:927 [main] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+09:37:59:857 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09:37:59:863 [main] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+09:37:59:870 [main] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-script-source], use [javax.persistence.schema-generation.drop-script-source] instead
+09:37:59:871 [main] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-source], use [javax.persistence.schema-generation.drop-source] instead
+09:37:59:887 [main] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
+09:37:59:933 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:38:00:436 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory-Hibernate is in classpath; If applicable, HQL parser will be used.
+09:38:01:186 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:38:02:097 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-808"]
+09:38:02:200 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 808 (http) with context path '/'
+09:38:02:216 [main] INFO  com.cts.emp.Employe.EmployeApplication-Started EmployeApplication in 8.742 seconds (process running for 10.114)
+09:38:11:490 [http-nio-808-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:38:11:490 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+09:38:11:494 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 3 ms
+09:38:11:582 [http-nio-808-exec-1] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+09:38:21:084 [http-nio-808-exec-5] INFO  org.springdoc.api.AbstractOpenApiResource-Init duration for springdoc-openapi is: 856 ms
+09:38:41:607 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee Service Imple class running
+09:38:41:736 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.controll.EmployeController-Add Employee controller running time 129 ms
+09:39:01:242 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee permanent address Service Imple class running
+09:39:01:290 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.controll.EmployeController-Add Employee address controller running time 47 ms
+09:39:03:741 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee permanent address Service Imple class running
+09:39:17:599 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee current address Service Imple class running
+09:39:17:614 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.controll.EmployeController-Add Employee address controller running time 15 ms
+09:39:21:606 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee current address Service Imple class running
+09:39:40:415 [http-nio-808-exec-1] INFO  com.cts.emp.Employe.controll.EmployeController-Delete Employee permanent address controller running
+09:39:40:416 [http-nio-808-exec-1] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Delete employee permanent address service impl running
+09:39:54:317 [http-nio-808-exec-2] INFO  com.cts.emp.Employe.controll.EmployeController-Delete Employee permanent address controller running
+09:39:54:318 [http-nio-808-exec-2] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Delete employee permanent address service impl running
+09:39:56:677 [http-nio-808-exec-3] INFO  com.cts.emp.Employe.controll.EmployeController-Delete Employee permanent address controller running
+09:39:56:678 [http-nio-808-exec-3] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Delete employee permanent address service impl running
+09:39:59:576 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.controll.EmployeController-Delete Employee permanent address controller running
+09:39:59:578 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Delete employee permanent address service impl running
+09:40:00:804 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.controll.EmployeController-Delete Employee permanent address controller running
+09:40:00:805 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Delete employee permanent address service impl running
+09:40:28:578 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+09:40:28:590 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 11 ms
+09:40:52:559 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.controll.EmployeController-Delete Employee permanent address controller running
