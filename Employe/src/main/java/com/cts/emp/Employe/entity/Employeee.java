@@ -11,6 +11,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Entity(name="Employee")
@@ -20,9 +23,14 @@ public class Employeee {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@JsonIgnore
 	public Integer id;
+	@NotEmpty(message="Username must not be empty")
 	public String name;
+	@NotEmpty(message="Password must not be empty")
 	public String password;
+	@NotEmpty(message="Age must not be 0")
 	public String age;
+	@NotNull(message="Salary must not be empty")
+	@Min(value=1,message="Salary must not be 0 ")
 	public Integer salary;
 	
 //	@OneToMany(mappedBy="employee",fetch = FetchType.EAGER

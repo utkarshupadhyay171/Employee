@@ -5,7 +5,6 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -26,6 +25,7 @@ import com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 
 
 
@@ -100,7 +100,7 @@ public class EmployeController {
 	
 //	API for employee register
 	@PostMapping("/register")
-	public ResponseEntity<Employeee>register(@RequestBody Employeee employee,HttpServletResponse response){
+	public ResponseEntity<Employeee>register(@Valid @RequestBody Employeee employee,HttpServletResponse response){
 		long startTime=System.nanoTime();
 		ResponseEntity<Employeee> result=employeeService.register(employee,response);
 		long endTime=System.nanoTime();
