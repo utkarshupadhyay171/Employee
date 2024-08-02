@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.http.ResponseEntity;
 
 import com.cts.emp.Employe.dto.Addressdto;
+import com.cts.emp.Employe.dto.Registerdto;
 import com.cts.emp.Employe.entity.Addresss;
 import com.cts.emp.Employe.entity.Employeee;
 import com.cts.emp.Employe.entity.Loginrequest;
@@ -17,7 +18,7 @@ public interface EmployeeeService {
 	
 	
 	public ResponseEntity<List<Employeee>> getAllEmployee(int pageNumber,int pageSize); 
-	public ResponseEntity<Employeee>register(Employeee employee,HttpServletResponse response);
+	public ResponseEntity<Employeee>register(Registerdto employee,HttpServletResponse response);
 	public ResponseEntity<EmployeResponse>updateEmployee(String name,Employeee employee);
 	public ResponseEntity<List<Employeee>>employeeWithSalaryMoreThan1Lakh();
 	public ResponseEntity<EmployeResponse>getEmployee(String username);

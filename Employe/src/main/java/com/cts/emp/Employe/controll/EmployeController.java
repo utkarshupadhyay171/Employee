@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.emp.Employe.dto.Addressdto;
+import com.cts.emp.Employe.dto.Registerdto;
 import com.cts.emp.Employe.entity.Addresss;
 import com.cts.emp.Employe.entity.Employeee;
 import com.cts.emp.Employe.entity.Loginrequest;
@@ -78,9 +79,9 @@ public class EmployeController {
 		return result;
 	}
 	
-//	API to add employee address
+//	API to add employee current address
 	@PostMapping("/addCurrentEmployeeAddress")
-	public ResponseEntity<String>addEmployeeCurrentpAddress( @RequestParam String username,HttpServletRequest request,@RequestBody Addressdto addressDTO){
+	public ResponseEntity<String>addEmployeeCurrentpAddress( @RequestParam String username,HttpServletRequest request,@Valid @RequestBody Addressdto addressDTO){
 		long startTime=System.nanoTime();
 		ResponseEntity<String> result=employeeService.addCurrentEmployeeAddress(addressDTO,username);
 		long endTime=System.nanoTime();
@@ -88,8 +89,9 @@ public class EmployeController {
 		logger.info("Add Employee address controller running time {} ms",duration);
 		return result;
 	}
+//	API to add employee permanent address
 	@PostMapping("/addPermanentEmployeeAddress")
-	public ResponseEntity<String>addEmployeePermanentAddress( @RequestParam String username,HttpServletRequest request,@RequestBody Addressdto addressDTO){
+	public ResponseEntity<String>addEmployeePermanentAddress( @RequestParam String username,HttpServletRequest request,@Valid @RequestBody Addressdto addressDTO){
 		long startTime=System.nanoTime();
 		ResponseEntity<String> result=employeeService.addPermanentEmployeeAddress(addressDTO,username);
 		long endTime=System.nanoTime();
@@ -100,7 +102,7 @@ public class EmployeController {
 	
 //	API for employee register
 	@PostMapping("/register")
-	public ResponseEntity<Employeee>register(@Valid @RequestBody Employeee employee,HttpServletResponse response){
+	public ResponseEntity<Employeee>register(@Valid @RequestBody Registerdto employee,HttpServletResponse response){
 		long startTime=System.nanoTime();
 		ResponseEntity<Employeee> result=employeeService.register(employee,response);
 		long endTime=System.nanoTime();
@@ -111,7 +113,7 @@ public class EmployeController {
 	
 //	API for employee login
 	@PostMapping("/login")
-	public ResponseEntity<String>login(@RequestBody Loginrequest login){
+	public ResponseEntity<String>login(@Valid @RequestBody Loginrequest login){
 		long startTime=System.nanoTime();
 		ResponseEntity<String> result=employeeService.login(login);
 		long endTime=System.nanoTime();

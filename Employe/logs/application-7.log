@@ -1,51 +1,53 @@
-16:17:00:216 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-16:17:00:247 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-script-source], use [javax.persistence.schema-generation.drop-script-source] instead
-16:17:00:247 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-source], use [javax.persistence.schema-generation.drop-source] instead
-16:17:00:291 [restartedMain] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
-16:17:00:298 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-16:17:00:409 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-16:17:00:568 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-LiveReload server is running on port 35729
-16:17:00:576 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-808"]
-16:17:00:581 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 808 (http) with context path '/'
-16:17:00:585 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Started EmployeApplication in 1.03 seconds (process running for 1636.634)
-16:17:00:587 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-Condition evaluation unchanged
-16:17:01:385 [http-nio-808-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-16:17:01:386 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
-16:17:01:388 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
-16:17:01:778 [http-nio-808-exec-4] INFO  org.springdoc.api.AbstractOpenApiResource-Init duration for springdoc-openapi is: 207 ms
-16:17:12:194 [http-nio-808-exec-5] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.cts.emp.Employe.entity.Employeee> com.cts.emp.Employe.controll.EmployeController.register(com.cts.emp.Employe.entity.Employeee,jakarta.servlet.http.HttpServletResponse) with 2 errors: [Field error in object 'employeee' on field 'salary': rejected value [0]; codes [Min.employeee.salary,Min.salary,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeee.salary,salary]; arguments []; default message [salary],1]; default message [Salary must not be 0 ]] [Field error in object 'employeee' on field 'name': rejected value []; codes [NotEmpty.employeee.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeee.name,name]; arguments []; default message [name]]; default message [Username must not be empty]] ]
-16:17:25:815 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-16:17:25:818 [Thread-49] INFO  org.apache.coyote.http11.Http11NioProtocol-Stopping ProtocolHandler ["http-nio-808"]
-16:17:26:153 [Thread-49] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-16:17:26:154 [Thread-49] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter-Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-16:17:26:154 [Thread-49] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-13 - Shutdown initiated...
-16:17:26:155 [Thread-49] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-13 - Shutdown completed.
-16:17:26:325 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 27332 (C:\Users\2273297\git\repository\Employe\target\classes started by 2273297 in C:\Users\2273297\git\repository\Employe)
-16:17:26:326 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-No active profile set, falling back to 1 default profile: "default"
-16:17:26:682 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-16:17:26:683 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-16:17:26:693 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.AddresssRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-16:17:26:697 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.EmployeeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-16:17:26:697 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
-16:17:26:703 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-16:17:26:703 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-16:17:26:714 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
-16:17:26:868 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 808 (http)
-16:17:26:869 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-808"]
-16:17:26:870 [restartedMain] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
-16:17:26:870 [restartedMain] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.25]
-16:17:26:922 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-16:17:26:923 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 594 ms
-16:17:26:939 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-14 - Starting...
-16:17:26:943 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-14 - Added connection conn112: url=jdbc:h2:mem:testdb user=SA
-16:17:26:944 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-14 - Start completed.
-16:17:26:944 [restartedMain] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration-H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-16:17:26:983 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-16:17:26:988 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator-HHH000026: Second-level cache disabled
-16:17:27:005 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
-16:17:27:049 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-16:17:27:094 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-16:17:27:094 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-16:17:27:095 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-script-source], use [javax.persistence.schema-generation.drop-script-source] instead
-16:17:27:095 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-source], use [javax.persistence.schema-generation.drop-source] instead
-16:17:27:096 [restartedMain] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
+10:08:43:144 [Thread-43] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+10:08:43:190 [Thread-43] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter-Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+10:08:43:190 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-11 - Shutdown initiated...
+10:08:43:230 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-11 - Shutdown completed.
+10:08:43:396 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 2992 (C:\Users\2273297\git\repository\Employe\target\classes started by 2273297 in C:\Users\2273297\git\repository\Employe)
+10:08:43:398 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-No active profile set, falling back to 1 default profile: "default"
+10:08:43:766 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+10:08:43:767 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:08:43:777 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.AddresssRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+10:08:43:780 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.EmployeeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+10:08:43:781 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+10:08:43:788 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+10:08:43:788 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:08:43:802 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+10:08:43:942 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 808 (http)
+10:08:43:943 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-808"]
+10:08:43:944 [restartedMain] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+10:08:43:944 [restartedMain] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.25]
+10:08:43:991 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+10:08:43:991 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 590 ms
+10:08:44:006 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-12 - Starting...
+10:08:44:008 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-12 - Added connection conn105: url=jdbc:h2:mem:testdb user=SA
+10:08:44:008 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-12 - Start completed.
+10:08:44:009 [restartedMain] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration-H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+10:08:44:041 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+10:08:44:046 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator-HHH000026: Second-level cache disabled
+10:08:44:063 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
+10:08:44:104 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+10:08:44:134 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+10:08:44:135 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+10:08:44:135 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-script-source], use [javax.persistence.schema-generation.drop-script-source] instead
+10:08:44:135 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-source], use [javax.persistence.schema-generation.drop-source] instead
+10:08:44:135 [restartedMain] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
+10:08:44:146 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:08:44:261 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:08:44:411 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-LiveReload server is running on port 35729
+10:08:44:417 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-808"]
+10:08:44:423 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 808 (http) with context path '/'
+10:08:44:428 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Started EmployeApplication in 1.091 seconds (process running for 1991.922)
+10:08:44:430 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-Condition evaluation unchanged
+10:08:50:030 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:08:50:032 [Thread-47] INFO  org.apache.coyote.http11.Http11NioProtocol-Stopping ProtocolHandler ["http-nio-808"]
+10:08:50:343 [Thread-47] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+10:08:50:343 [Thread-47] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter-Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+10:08:50:344 [Thread-47] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-12 - Shutdown initiated...
+10:08:50:344 [Thread-47] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-12 - Shutdown completed.
+10:08:50:485 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 2992 (C:\Users\2273297\git\repository\Employe\target\classes started by 2273297 in C:\Users\2273297\git\repository\Employe)
+10:08:50:486 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-No active profile set, falling back to 1 default profile: "default"
+10:08:50:814 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+10:08:50:814 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:08:50:823 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.AddresssRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+10:08:50:825 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.EmployeeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+10:08:50:825 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.

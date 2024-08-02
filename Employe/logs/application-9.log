@@ -1,57 +1,82 @@
-16:22:35:108 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-808"]
-16:22:35:144 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 808 (http) with context path '/'
-16:22:35:148 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Started EmployeApplication in 1.085 seconds (process running for 1971.198)
-16:22:35:150 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-Condition evaluation unchanged
-16:22:42:539 [http-nio-808-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-16:22:42:577 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
-16:22:42:579 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
-16:22:42:585 [http-nio-808-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value]
-16:26:04:097 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-16:26:04:111 [Thread-57] INFO  org.apache.coyote.http11.Http11NioProtocol-Stopping ProtocolHandler ["http-nio-808"]
-16:26:04:465 [Thread-57] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-16:26:04:467 [Thread-57] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter-Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-16:26:04:468 [Thread-57] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-15 - Shutdown initiated...
-16:26:04:469 [Thread-57] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-15 - Shutdown completed.
-16:26:04:677 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 27332 (C:\Users\2273297\git\repository\Employe\target\classes started by 2273297 in C:\Users\2273297\git\repository\Employe)
-16:26:04:679 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-No active profile set, falling back to 1 default profile: "default"
-16:26:05:167 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-16:26:05:167 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-16:26:05:176 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.AddresssRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-16:26:05:179 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.EmployeeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-16:26:05:179 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
-16:26:05:183 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-16:26:05:183 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-16:26:05:193 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
-16:26:05:320 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 808 (http)
-16:26:05:321 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-808"]
-16:26:05:322 [restartedMain] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
-16:26:05:322 [restartedMain] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.25]
-16:26:05:366 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-16:26:05:366 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 682 ms
-16:26:05:381 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-16 - Starting...
-16:26:05:383 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-16 - Added connection conn132: url=jdbc:h2:mem:testdb user=SA
-16:26:05:384 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-16 - Start completed.
-16:26:05:384 [restartedMain] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration-H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-16:26:05:418 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-16:26:05:421 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator-HHH000026: Second-level cache disabled
-16:26:05:432 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
-16:26:05:471 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-16:26:05:501 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-16:26:05:502 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-16:26:05:502 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-script-source], use [javax.persistence.schema-generation.drop-script-source] instead
-16:26:05:502 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-source], use [javax.persistence.schema-generation.drop-source] instead
-16:26:05:503 [restartedMain] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
-16:26:05:513 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-16:26:05:636 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-16:26:05:813 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-LiveReload server is running on port 35729
-16:26:05:821 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-808"]
-16:26:05:827 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 808 (http) with context path '/'
-16:26:05:831 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Started EmployeApplication in 1.234 seconds (process running for 2181.88)
-16:26:05:832 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-Condition evaluation unchanged
-16:26:13:379 [http-nio-808-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-16:26:13:379 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
-16:26:13:380 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
-16:26:13:384 [http-nio-808-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value]
-16:28:49:024 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-16:28:49:028 [Thread-61] INFO  org.apache.coyote.http11.Http11NioProtocol-Stopping ProtocolHandler ["http-nio-808"]
-16:28:49:365 [Thread-61] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+10:09:56:307 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+10:09:56:339 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+10:09:56:340 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-script-source], use [javax.persistence.schema-generation.drop-script-source] instead
+10:09:56:375 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-source], use [javax.persistence.schema-generation.drop-source] instead
+10:09:56:376 [restartedMain] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
+10:09:56:385 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:09:56:497 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:09:56:648 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-LiveReload server is running on port 35729
+10:09:56:656 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-808"]
+10:09:56:662 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 808 (http) with context path '/'
+10:09:56:667 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Started EmployeApplication in 0.998 seconds (process running for 2064.161)
+10:09:56:668 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-Condition evaluation unchanged
+10:10:15:170 [http-nio-808-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:10:15:170 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+10:10:15:172 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+10:10:15:707 [http-nio-808-exec-4] INFO  org.springdoc.api.AbstractOpenApiResource-Init duration for springdoc-openapi is: 295 ms
+10:10:38:068 [http-nio-808-exec-2] ERROR org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotEmpty' validating type 'java.lang.Integer'. Check configuration for 'salary'] with root cause
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotEmpty' validating type 'java.lang.Integer'. Check configuration for 'salary'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-8.0.1.Final.jar:8.0.1.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-8.0.1.Final.jar:8.0.1.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58) ~[hibernate-validator-8.0.1.Final.jar:8.0.1.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-8.0.1.Final.jar:8.0.1.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-8.0.1.Final.jar:8.0.1.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-8.0.1.Final.jar:8.0.1.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-8.0.1.Final.jar:8.0.1.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-8.0.1.Final.jar:8.0.1.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-8.0.1.Final.jar:8.0.1.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-8.0.1.Final.jar:8.0.1.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-8.0.1.Final.jar:8.0.1.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-8.0.1.Final.jar:8.0.1.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:106) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:67) ~[spring-boot-autoconfigure-3.3.1.jar:3.3.1]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:1264) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:252) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:142) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]

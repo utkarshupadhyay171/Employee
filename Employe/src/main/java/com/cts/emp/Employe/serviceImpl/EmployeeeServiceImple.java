@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 import com.cts.emp.Employe.Jpa.AddresssRepository;
 import com.cts.emp.Employe.Jpa.EmployeeeRepository;
 import com.cts.emp.Employe.dto.Addressdto;
+import com.cts.emp.Employe.dto.Registerdto;
 import com.cts.emp.Employe.entity.Addresss;
 import com.cts.emp.Employe.entity.Employeee;
 import com.cts.emp.Employe.entity.Loginrequest;
@@ -41,10 +42,15 @@ public class EmployeeeServiceImple implements EmployeeeService {
 	    Addresss address = new Addresss();
 	    address.setCity(addressDTO.getCity());
 	    address.setState(addressDTO.getState());
-	    
-	    
-	    System.out.println(address);
 	    return address;
+	}
+	public Employeee convertToEmployeEntity(Registerdto registerdto) {
+		Employeee employee=new Employeee();
+		employee.setName(registerdto.getName());
+		employee.setAge(registerdto.getAge());
+		employee.setPassword(registerdto.getPassword());
+		employee.setSalary(registerdto.getSalary());
+		return employee;
 	}
 	
 	public ResponseEntity<List<Employeee>> getAllEmployee(int pageNumber,int pageSize) {
@@ -53,10 +59,12 @@ public class EmployeeeServiceImple implements EmployeeeService {
 	}
 	
 // Register employe function
-	public ResponseEntity<Employeee>register(Employeee employee,HttpServletResponse response){
+	public ResponseEntity<Employeee>register(Registerdto employee,HttpServletResponse response){
 		logger.info("Add Employee Service Imple class running");
-		employeeRepository.save(employee);
-		return ResponseEntity.status(HttpStatus.CREATED).body(employee);
+		Employeee emp=convertToEmployeEntity(employee);
+		
+		employeeRepository.save(emp);
+		return ResponseEntity.status(HttpStatus.CREATED).body(emp);
 	}
 //	Update employee function
 	@CacheEvict(value="employeedetils",key="#name")

@@ -1,42 +1,7 @@
-16:30:31:742 [Thread-65] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-17 - Shutdown initiated...
-16:30:31:792 [Thread-65] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-17 - Shutdown completed.
-16:30:31:953 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 27332 (C:\Users\2273297\git\repository\Employe\target\classes started by 2273297 in C:\Users\2273297\git\repository\Employe)
-16:30:31:954 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-No active profile set, falling back to 1 default profile: "default"
-16:30:32:216 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-16:30:32:216 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-16:30:32:225 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.AddresssRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-16:30:32:227 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.EmployeeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-16:30:32:227 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
-16:30:32:232 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-16:30:32:232 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-16:30:32:241 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
-16:30:32:339 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 808 (http)
-16:30:32:340 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-808"]
-16:30:32:341 [restartedMain] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
-16:30:32:341 [restartedMain] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.25]
-16:30:32:387 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-16:30:32:387 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 431 ms
-16:30:32:401 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-18 - Starting...
-16:30:32:404 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-18 - Added connection conn152: url=jdbc:h2:mem:testdb user=SA
-16:30:32:404 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-18 - Start completed.
-16:30:32:405 [restartedMain] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration-H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-16:30:32:438 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-16:30:32:442 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator-HHH000026: Second-level cache disabled
-16:30:32:490 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
-16:30:32:528 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-16:30:32:563 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-16:30:32:563 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-16:30:32:564 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-script-source], use [javax.persistence.schema-generation.drop-script-source] instead
-16:30:32:564 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-source], use [javax.persistence.schema-generation.drop-source] instead
-16:30:32:565 [restartedMain] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
-16:30:32:572 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-16:30:32:678 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-16:30:32:819 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-LiveReload server is running on port 35729
-16:30:32:825 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-808"]
-16:30:32:829 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 808 (http) with context path '/'
-16:30:32:834 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Started EmployeApplication in 0.937 seconds (process running for 2448.884)
-16:30:32:836 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-Condition evaluation unchanged
-16:30:33:286 [http-nio-808-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-16:30:33:287 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
-16:30:33:288 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
-16:30:33:295 [http-nio-808-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries]
+10:13:20:963 [http-nio-808-exec-3] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:13:21:006 [http-nio-808-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: User name incorrect or user not logged in]
+10:13:44:664 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee Service Imple class running
+10:13:44:673 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.controll.EmployeController-Add Employee controller running time 8 ms
+10:13:48:384 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:13:48:398 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 14 ms
+11:23:00:976 [HikariPool-15 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-15 - Thread starvation or clock leap detected (housekeeper delta=1h9m22s763ms283µs800ns).

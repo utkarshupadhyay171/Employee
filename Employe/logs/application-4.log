@@ -1,53 +1,74 @@
-16:10:00:053 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 27332 (C:\Users\2273297\git\repository\Employe\target\classes started by 2273297 in C:\Users\2273297\git\repository\Employe)
-16:10:00:100 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-No active profile set, falling back to 1 default profile: "default"
-16:10:00:504 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-16:10:00:504 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-16:10:00:557 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.AddresssRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-16:10:00:561 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.EmployeeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-16:10:00:562 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
-16:10:00:572 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-16:10:00:572 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-16:10:00:593 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
-16:10:00:695 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 808 (http)
-16:10:00:696 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-808"]
-16:10:00:697 [restartedMain] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
-16:10:00:697 [restartedMain] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.25]
-16:10:00:738 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-16:10:00:738 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 634 ms
-16:10:00:756 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-10 - Starting...
-16:10:00:759 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-10 - Added connection conn72: url=jdbc:h2:mem:testdb user=SA
-16:10:00:759 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-10 - Start completed.
-16:10:00:759 [restartedMain] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration-H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-16:10:00:789 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-16:10:00:795 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator-HHH000026: Second-level cache disabled
-16:10:00:809 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
-16:10:00:876 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-16:10:00:919 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-16:10:00:919 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-16:10:00:919 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-script-source], use [javax.persistence.schema-generation.drop-script-source] instead
-16:10:00:919 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-source], use [javax.persistence.schema-generation.drop-source] instead
-16:10:00:920 [restartedMain] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
-16:10:00:928 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-16:10:01:066 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-16:10:01:269 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-LiveReload server is running on port 35729
-16:10:01:275 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-808"]
-16:10:01:281 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 808 (http) with context path '/'
-16:10:01:285 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Started EmployeApplication in 1.369 seconds (process running for 1217.334)
-16:10:01:287 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-Condition evaluation unchanged
-16:10:58:698 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-16:10:58:701 [Thread-28] INFO  org.apache.coyote.http11.Http11NioProtocol-Stopping ProtocolHandler ["http-nio-808"]
-16:10:59:013 [Thread-28] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-16:10:59:014 [Thread-28] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter-Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-16:10:59:014 [Thread-28] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-10 - Shutdown initiated...
-16:10:59:015 [Thread-28] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-10 - Shutdown completed.
-16:10:59:149 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 27332 (C:\Users\2273297\git\repository\Employe\target\classes started by 2273297 in C:\Users\2273297\git\repository\Employe)
-16:10:59:150 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-No active profile set, falling back to 1 default profile: "default"
-16:10:59:423 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-16:10:59:424 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-16:10:59:432 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.AddresssRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-16:10:59:434 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.EmployeeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-16:10:59:435 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
-16:10:59:440 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-16:10:59:440 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-16:10:59:451 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
-16:10:59:573 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 808 (http)
+10:02:24:372 [restartedMain] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
+10:02:24:416 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:02:24:433 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeController': Lookup method resolution failed
+10:02:24:434 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+10:02:24:435 [restartedMain] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter-Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+10:02:24:436 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-8 - Shutdown initiated...
+10:02:24:438 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-8 - Shutdown completed.
+10:02:24:439 [restartedMain] INFO  org.apache.catalina.core.StandardService-Stopping service [Tomcat]
+10:02:24:447 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+10:02:24:478 [restartedMain] ERROR org.springframework.boot.SpringApplication-Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1296) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.1.jar:3.3.1]
+	at com.cts.emp.Employe.EmployeApplication.main(EmployeApplication.java:12) [classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.1.jar:3.3.1]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.cts.emp.Employe.controll.EmployeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@68ccac29]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.10.jar:6.1.10]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.10.jar:6.1.10]
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: Registerdto
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[?:?]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[?:?]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.10.jar:6.1.10]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.10.jar:6.1.10]
+	... 24 more
+Caused by: java.lang.ClassNotFoundException: Registerdto
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.3.1.jar:3.3.1]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[?:?]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[?:?]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.10.jar:6.1.10]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.10.jar:6.1.10]
+	... 24 more
+10:03:00:198 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 2992 (C:\Users\2273297\git\repository\Employe\target\classes started by 2273297 in C:\Users\2273297\git\repository\Employe)
+10:03:00:200 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-No active profile set, falling back to 1 default profile: "default"
+10:03:00:562 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+10:03:00:562 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:03:00:573 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.AddresssRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+10:03:00:577 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.EmployeeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+10:03:00:577 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+10:03:00:584 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
