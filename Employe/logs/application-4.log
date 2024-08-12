@@ -1,74 +1,36 @@
-10:02:24:372 [restartedMain] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
-10:02:24:416 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-10:02:24:433 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeController': Lookup method resolution failed
-10:02:24:434 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-10:02:24:435 [restartedMain] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter-Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-10:02:24:436 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-8 - Shutdown initiated...
-10:02:24:438 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-8 - Shutdown completed.
-10:02:24:439 [restartedMain] INFO  org.apache.catalina.core.StandardService-Stopping service [Tomcat]
-10:02:24:447 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-10:02:24:478 [restartedMain] ERROR org.springframework.boot.SpringApplication-Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeController': Lookup method resolution failed
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497) ~[spring-beans-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1296) ~[spring-beans-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.10.jar:6.1.10]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.10.jar:6.1.10]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.10.jar:6.1.10]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.1.jar:3.3.1]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.1.jar:3.3.1]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.1.jar:3.3.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.1.jar:3.3.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.1.jar:3.3.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.1.jar:3.3.1]
-	at com.cts.emp.Employe.EmployeApplication.main(EmployeApplication.java:12) [classes/:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.1.jar:3.3.1]
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.cts.emp.Employe.controll.EmployeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@68ccac29]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.10.jar:6.1.10]
-	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.10.jar:6.1.10]
-	... 24 more
-Caused by: java.lang.NoClassDefFoundError: Registerdto
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?]
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[?:?]
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[?:?]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.10.jar:6.1.10]
-	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.10.jar:6.1.10]
-	... 24 more
-Caused by: java.lang.ClassNotFoundException: Registerdto
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
-	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
-	at java.base/java.lang.Class.forName(Class.java:467) ~[?:?]
-	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.3.1.jar:3.3.1]
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?]
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[?:?]
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[?:?]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.10.jar:6.1.10]
-	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.10.jar:6.1.10]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.10.jar:6.1.10]
-	... 24 more
-10:03:00:198 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 2992 (C:\Users\2273297\git\repository\Employe\target\classes started by 2273297 in C:\Users\2273297\git\repository\Employe)
-10:03:00:200 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-No active profile set, falling back to 1 default profile: "default"
-10:03:00:562 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-10:03:00:562 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-10:03:00:573 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.AddresssRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-10:03:00:577 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.EmployeeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-10:03:00:577 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
-10:03:00:584 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+12:13:01:008 [http-nio-808-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:01:049 [http-nio-808-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:01:057 [http-nio-808-exec-7] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:14:006 [http-nio-808-exec-10] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:14:018 [http-nio-808-exec-9] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:14:031 [http-nio-808-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:14:043 [http-nio-808-exec-3] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:15:005 [http-nio-808-exec-2] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:15:018 [http-nio-808-exec-4] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:15:030 [http-nio-808-exec-5] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:15:042 [http-nio-808-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:24:014 [http-nio-808-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:24:024 [http-nio-808-exec-7] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:24:034 [http-nio-808-exec-10] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:24:046 [http-nio-808-exec-9] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:24:999 [http-nio-808-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:25:011 [http-nio-808-exec-3] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:25:023 [http-nio-808-exec-2] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:25:034 [http-nio-808-exec-4] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:28:004 [http-nio-808-exec-5] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:28:015 [http-nio-808-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:28:028 [http-nio-808-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:28:039 [http-nio-808-exec-7] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:32:034 [http-nio-808-exec-10] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:32:048 [http-nio-808-exec-9] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:32:062 [http-nio-808-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:32:075 [http-nio-808-exec-3] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:41:991 [http-nio-808-exec-2] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:41:998 [http-nio-808-exec-4] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:42:005 [http-nio-808-exec-5] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:42:012 [http-nio-808-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:47:991 [http-nio-808-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:47:999 [http-nio-808-exec-7] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:48:007 [http-nio-808-exec-10] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:48:014 [http-nio-808-exec-9] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:51:999 [http-nio-808-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]

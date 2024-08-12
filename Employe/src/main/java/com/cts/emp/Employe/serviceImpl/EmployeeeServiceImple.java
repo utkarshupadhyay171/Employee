@@ -50,6 +50,8 @@ public class EmployeeeServiceImple implements EmployeeeService {
 		employee.setAge(registerdto.getAge());
 		employee.setPassword(registerdto.getPassword());
 		employee.setSalary(registerdto.getSalary());
+		employee.setEmail(registerdto.getEmail());
+		employee.setPhoneNo(registerdto.getPhoneNo());
 		return employee;
 	}
 	
@@ -90,6 +92,7 @@ public class EmployeeeServiceImple implements EmployeeeService {
 	            }
 	        
 	        }
+	        System.out.println(employee);
 	        employeeRepository.save(employee);
 	        return new ResponseEntity<>(new EmployeResponse(employee,"User updated"),HttpStatus.OK);
 	    

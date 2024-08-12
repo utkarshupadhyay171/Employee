@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cts.emp.Employe.dto.Addressdto;
 import com.cts.emp.Employe.dto.Registerdto;
 import com.cts.emp.Employe.entity.Addresss;
+import com.cts.emp.Employe.entity.EmployeAddressRequest;
 import com.cts.emp.Employe.entity.Employeee;
 import com.cts.emp.Employe.entity.Loginrequest;
 import com.cts.emp.Employe.response.EmployeResponse;
@@ -81,8 +82,12 @@ public class EmployeController {
 	
 //	API to add employee current address
 	@PostMapping("/addCurrentEmployeeAddress")
-	public ResponseEntity<String>addEmployeeCurrentpAddress( @RequestParam String username,HttpServletRequest request,@Valid @RequestBody Addressdto addressDTO){
+	public ResponseEntity<String>addEmployeeCurrentpAddress( @RequestBody EmployeAddressRequest employeAddressRequest ){
+		String username=employeAddressRequest.getUsername();
+		Addressdto addressDTO=employeAddressRequest.getAddressDTO();
 		long startTime=System.nanoTime();
+		System.out.println(addressDTO);
+		System.out.println(username);
 		ResponseEntity<String> result=employeeService.addCurrentEmployeeAddress(addressDTO,username);
 		long endTime=System.nanoTime();
 		long duration=(endTime-startTime)/1000000;
@@ -91,8 +96,10 @@ public class EmployeController {
 	}
 //	API to add employee permanent address
 	@PostMapping("/addPermanentEmployeeAddress")
-	public ResponseEntity<String>addEmployeePermanentAddress( @RequestParam String username,HttpServletRequest request,@Valid @RequestBody Addressdto addressDTO){
+	public ResponseEntity<String>addEmployeePermanentAddress( @RequestBody EmployeAddressRequest employeAddressRequest ){
 		long startTime=System.nanoTime();
+		String username=employeAddressRequest.getUsername();
+		Addressdto addressDTO=employeAddressRequest.getAddressDTO();
 		ResponseEntity<String> result=employeeService.addPermanentEmployeeAddress(addressDTO,username);
 		long endTime=System.nanoTime();
 		long duration=(endTime-startTime)/1000000;
@@ -104,12 +111,14 @@ public class EmployeController {
 	@PostMapping("/register")
 	public ResponseEntity<Employeee>register(@Valid @RequestBody Registerdto employee,HttpServletResponse response){
 		long startTime=System.nanoTime();
+		logger.info(employee);
 		ResponseEntity<Employeee> result=employeeService.register(employee,response);
 		long endTime=System.nanoTime();
 		long duration=(endTime-startTime)/1000000;
 		logger.info("Add Employee controller running time {} ms",duration);
 		return result;
 	}
+
 	
 //	API for employee login
 	@PostMapping("/login")
@@ -126,6 +135,8 @@ public class EmployeController {
 	@PutMapping("/updateEmployee")
 	public ResponseEntity<EmployeResponse>updateEmployeeDetails(HttpServletRequest request,@RequestParam String username,@RequestBody Employeee employee){
 		logger.info("Update Employee controller running");
+		logger.info(username);
+		logger.info(employee);
 		return employeeService.updateEmployee(username,employee);
 	}
 	
@@ -133,7 +144,7 @@ public class EmployeController {
 	@PutMapping("/updateEmployeeAddress")
 	public ResponseEntity<EmployeResponse>updateEmployeeAddress(@RequestParam String username ,@RequestParam Integer id,@RequestBody Addresss address){
 		logger.info("Update Employee address controller running");
-
+		logger.info(username,id,address);
 		return employeeService.updateEmployeeAddress(id,address,username);
 	}
 	

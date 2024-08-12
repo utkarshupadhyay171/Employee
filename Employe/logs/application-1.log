@@ -1,48 +1,58 @@
-09:57:20:462 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
-09:57:20:516 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-09:57:20:517 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-09:57:20:538 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
-09:57:20:762 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 808 (http)
-09:57:20:764 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-808"]
-09:57:20:765 [restartedMain] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
-09:57:20:766 [restartedMain] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.25]
-09:57:20:823 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-09:57:20:824 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 908 ms
-09:57:20:842 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-5 - Starting...
-09:57:20:846 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-5 - Added connection conn41: url=jdbc:h2:mem:testdb user=SA
-09:57:20:849 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-5 - Start completed.
-09:57:20:849 [restartedMain] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration-H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-09:57:20:892 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-09:57:20:898 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator-HHH000026: Second-level cache disabled
-09:57:20:919 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
-09:57:20:977 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-09:57:21:029 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-09:57:21:030 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-09:57:21:030 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-script-source], use [javax.persistence.schema-generation.drop-script-source] instead
-09:57:21:030 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-source], use [javax.persistence.schema-generation.drop-source] instead
-09:57:21:031 [restartedMain] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
-09:57:21:045 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-09:57:21:182 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-09:57:21:368 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-LiveReload server is running on port 35729
-09:57:21:374 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-808"]
-09:57:21:379 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 808 (http) with context path '/'
-09:57:21:383 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Started EmployeApplication in 1.545 seconds (process running for 1308.877)
-09:57:21:385 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-Condition evaluation unchanged
-09:57:44:402 [http-nio-808-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
-09:57:44:403 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
-09:57:44:404 [http-nio-808-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
-09:57:44:426 [http-nio-808-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [2] in public org.springframework.http.ResponseEntity<java.lang.String> com.cts.emp.Employe.controll.EmployeController.addEmployeePermanentAddress(java.lang.String,jakarta.servlet.http.HttpServletRequest,com.cts.emp.Employe.dto.Addressdto) with 2 errors: [Field error in object 'addressdto' on field 'city': rejected value []; codes [NotEmpty.addressdto.city,NotEmpty.city,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [addressdto.city,city]; arguments []; default message [city]]; default message [City can not be blank]] [Field error in object 'addressdto' on field 'state': rejected value []; codes [NotEmpty.addressdto.state,NotEmpty.state,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [addressdto.state,state]; arguments []; default message [state]]; default message [State can not be blank]] ]
-09:57:51:198 [http-nio-808-exec-2] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
-09:57:51:215 [http-nio-808-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: User name incorrect or user not logged in]
-09:57:58:379 [http-nio-808-exec-3] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee Service Imple class running
-09:57:58:386 [http-nio-808-exec-3] INFO  com.cts.emp.Employe.controll.EmployeController-Add Employee controller running time 6 ms
-09:58:13:319 [http-nio-808-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.cts.emp.Employe.controll.EmployeController.login(com.cts.emp.Employe.entity.Loginrequest): [Field error in object 'loginrequest' on field 'name': rejected value []; codes [NotEmpty.loginrequest.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginrequest.name,name]; arguments []; default message [name]]; default message [Name can not be blank]] ]
-09:58:20:287 [http-nio-808-exec-5] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: Employe not registered]
-09:58:29:547 [http-nio-808-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.cts.emp.Employe.controll.EmployeController.login(com.cts.emp.Employe.entity.Loginrequest): [Field error in object 'loginrequest' on field 'password': rejected value []; codes [NotEmpty.loginrequest.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginrequest.password,password]; arguments []; default message [password]]; default message [Password can not be blank]] ]
-09:59:58:067 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-09:59:58:070 [Thread-20] INFO  org.apache.coyote.http11.Http11NioProtocol-Stopping ProtocolHandler ["http-nio-808"]
-09:59:58:336 [Thread-20] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-09:59:58:338 [Thread-20] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter-Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-09:59:58:338 [Thread-20] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-5 - Shutdown initiated...
-09:59:58:339 [Thread-20] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-5 - Shutdown completed.
-09:59:58:478 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 2992 (C:\Users\2273297\git\repository\Employe\target\classes started by 2273297 in C:\Users\2273297\git\repository\Employe)
+10:43:58:075 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 7 ms
+10:49:22:996 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:49:23:004 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 8 ms
+10:49:43:002 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:49:43:009 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 7 ms
+10:49:54:004 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:49:54:014 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 10 ms
+10:49:57:002 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:49:57:011 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 8 ms
+10:50:16:532 [http-nio-808-exec-2] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:50:16:536 [http-nio-808-exec-1] INFO  com.cts.emp.Employe.controll.EmployeController-Login employee controller running time 5 ms
+10:50:16:540 [http-nio-808-exec-2] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 7 ms
+10:50:16:546 [http-nio-808-exec-3] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:50:16:553 [http-nio-808-exec-3] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 7 ms
+10:50:51:295 [http-nio-808-exec-4] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:50:51:321 [http-nio-808-exec-5] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:50:56:176 [http-nio-808-exec-7] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:50:56:184 [http-nio-808-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:51:08:817 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:51:08:822 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.controll.EmployeController-Login employee controller running time 5 ms
+10:51:08:822 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 5 ms
+10:51:08:828 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:51:08:833 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 5 ms
+10:52:11:717 [http-nio-808-exec-3] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:52:11:731 [http-nio-808-exec-4] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:52:11:749 [http-nio-808-exec-5] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:52:49:984 [http-nio-808-exec-7] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:52:49:994 [http-nio-808-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:52:50:003 [http-nio-808-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:52:59:846 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:52:59:851 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.controll.EmployeController-Login employee controller running time 5 ms
+10:52:59:851 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 4 ms
+10:52:59:860 [http-nio-808-exec-1] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:52:59:866 [http-nio-808-exec-1] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 6 ms
+10:53:11:783 [http-nio-808-exec-2] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:53:11:795 [http-nio-808-exec-2] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 12 ms
+10:53:11:801 [http-nio-808-exec-3] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:53:11:808 [http-nio-808-exec-3] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 7 ms
+10:53:11:814 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:53:11:821 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 7 ms
+10:53:11:827 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:53:11:833 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 6 ms
+10:53:42:446 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:53:42:454 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 8 ms
+10:53:42:459 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:53:42:465 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 6 ms
+10:53:42:472 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:53:42:479 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 6 ms
+10:53:42:484 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+10:53:42:491 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 7 ms
+10:53:52:997 [http-nio-808-exec-10] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:53:53:005 [http-nio-808-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:53:53:013 [http-nio-808-exec-2] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:53:53:021 [http-nio-808-exec-3] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:53:53:807 [http-nio-808-exec-4] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:53:53:816 [http-nio-808-exec-5] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:53:53:825 [http-nio-808-exec-7] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+10:53:53:837 [http-nio-808-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]

@@ -1,59 +1,65 @@
-10:03:00:584 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-10:03:00:629 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
-10:03:00:751 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 808 (http)
-10:03:00:753 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-808"]
-10:03:00:754 [restartedMain] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
-10:03:00:755 [restartedMain] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.25]
-10:03:00:801 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-10:03:00:801 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 599 ms
-10:03:00:813 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-9 - Starting...
-10:03:00:816 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-9 - Added connection conn75: url=jdbc:h2:mem:testdb user=SA
-10:03:00:816 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-9 - Start completed.
-10:03:00:817 [restartedMain] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration-H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-10:03:00:844 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-10:03:00:847 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator-HHH000026: Second-level cache disabled
-10:03:00:859 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
-10:03:00:901 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-10:03:00:934 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-10:03:00:934 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-10:03:00:934 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-script-source], use [javax.persistence.schema-generation.drop-script-source] instead
-10:03:00:934 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [jakarta.persistence.schema-generation.drop-source], use [javax.persistence.schema-generation.drop-source] instead
-10:03:00:936 [restartedMain] WARN  org.hibernate.tool.schema.internal.exec.ScriptSourceInputFromFile-Specified schema generation script file [drop-tables.sql] did not exist for reading
-10:03:00:944 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
-10:03:01:081 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-10:03:01:272 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-LiveReload server is running on port 35729
-10:03:01:279 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-808"]
-10:03:01:285 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 808 (http) with context path '/'
-10:03:01:291 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Started EmployeApplication in 1.146 seconds (process running for 1648.785)
-10:03:01:294 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-Condition evaluation unchanged
-10:03:21:328 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-10:03:21:332 [Thread-32] INFO  org.apache.coyote.http11.Http11NioProtocol-Stopping ProtocolHandler ["http-nio-808"]
-10:03:21:727 [Thread-32] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
-10:03:21:729 [Thread-32] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter-Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-10:03:21:729 [Thread-32] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-9 - Shutdown initiated...
-10:03:21:731 [Thread-32] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-9 - Shutdown completed.
-10:03:21:942 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-Starting EmployeApplication using Java 17.0.11 with PID 2992 (C:\Users\2273297\git\repository\Employe\target\classes started by 2273297 in C:\Users\2273297\git\repository\Employe)
-10:03:21:943 [restartedMain] INFO  com.cts.emp.Employe.EmployeApplication-No active profile set, falling back to 1 default profile: "default"
-10:03:22:250 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-10:03:22:251 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-10:03:22:263 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.AddresssRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-10:03:22:267 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport-Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cts.emp.Employe.Jpa.EmployeeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-10:03:22:267 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
-10:03:22:275 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
-10:03:22:275 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-10:03:22:304 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
-10:03:22:468 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 808 (http)
-10:03:22:469 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-808"]
-10:03:22:471 [restartedMain] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
-10:03:22:471 [restartedMain] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.25]
-10:03:22:511 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]-Initializing Spring embedded WebApplicationContext
-10:03:22:511 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 564 ms
-10:03:22:524 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-10 - Starting...
-10:03:22:527 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-10 - Added connection conn85: url=jdbc:h2:mem:testdb user=SA
-10:03:22:528 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-10 - Start completed.
-10:03:22:528 [restartedMain] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration-H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-10:03:22:562 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
-10:03:22:565 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator-HHH000026: Second-level cache disabled
-10:03:22:581 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
-10:03:22:619 [restartedMain] WARN  org.hibernate.orm.deprecation-HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
-10:03:22:654 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:13:52:010 [http-nio-808-exec-3] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:52:062 [http-nio-808-exec-2] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:13:52:073 [http-nio-808-exec-4] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+12:14:02:847 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:02:855 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.controll.EmployeController-Login employee controller running time 9 ms
+12:14:02:857 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 10 ms
+12:14:02:866 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:02:874 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 6 ms
+12:14:07:605 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.controll.EmployeController-Delete Employee controller running
+12:14:07:606 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Delete Employee Service Imple class running
+12:14:43:002 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:43:050 [http-nio-808-exec-9] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: User name incorrect or user not logged in]
+12:14:43:055 [http-nio-808-exec-1] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:43:062 [http-nio-808-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: User name incorrect or user not logged in]
+12:14:43:066 [http-nio-808-exec-3] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:43:070 [http-nio-808-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: User name incorrect or user not logged in]
+12:14:43:075 [http-nio-808-exec-2] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:43:082 [http-nio-808-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: User name incorrect or user not logged in]
+12:14:43:087 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:43:092 [http-nio-808-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: User name incorrect or user not logged in]
+12:14:44:002 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:44:007 [http-nio-808-exec-5] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: User name incorrect or user not logged in]
+12:14:44:012 [http-nio-808-exec-6] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:44:017 [http-nio-808-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: User name incorrect or user not logged in]
+12:14:44:024 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:44:030 [http-nio-808-exec-8] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: User name incorrect or user not logged in]
+12:14:44:034 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:44:040 [http-nio-808-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: User name incorrect or user not logged in]
+12:14:44:045 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:44:049 [http-nio-808-exec-10] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-Resolved [com.cts.emp.Employe.exception.EmployeNotFoundException: User name incorrect or user not logged in]
+12:14:53:063 [http-nio-808-exec-1] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:53:067 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.controll.EmployeController-Login employee controller running time 5 ms
+12:14:53:072 [http-nio-808-exec-1] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 9 ms
+12:14:53:084 [http-nio-808-exec-3] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:14:53:096 [http-nio-808-exec-3] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 12 ms
+12:14:57:457 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.controll.EmployeController-Delete Employee controller running
+12:14:57:458 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Delete Employee Service Imple class running
+12:17:08:684 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee Service Imple class running
+12:17:08:690 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.controll.EmployeController-Add Employee controller running time 5 ms
+12:17:15:567 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:17:15:571 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.controll.EmployeController-Login employee controller running time 7 ms
+12:17:15:576 [http-nio-808-exec-9] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 9 ms
+12:17:15:583 [http-nio-808-exec-1] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:17:15:594 [http-nio-808-exec-1] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 11 ms
+12:17:22:964 [http-nio-808-exec-2] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee current address Service Imple class running
+12:17:22:975 [http-nio-808-exec-2] INFO  com.cts.emp.Employe.controll.EmployeController-Add Employee address controller running time 10 ms
+12:17:22:987 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:17:22:998 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 11 ms
+12:17:23:014 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:17:23:024 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 9 ms
+12:17:26:749 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.controll.EmployeController-Update Employee address controller running
+12:17:26:749 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.controll.EmployeController-Utkarsh
+12:17:26:750 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Update Employee address Service Imple class running
+12:17:26:780 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:17:26:787 [http-nio-808-exec-7] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 6 ms
+12:17:26:801 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:17:26:809 [http-nio-808-exec-10] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 7 ms
+12:19:06:466 [http-nio-808-exec-2] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Add Employee permanent address Service Imple class running
+12:19:06:481 [http-nio-808-exec-2] INFO  com.cts.emp.Employe.controll.EmployeController-Add Employee address controller running time 14 ms
+12:19:06:497 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:19:06:505 [http-nio-808-exec-4] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 8 ms
+12:19:06:526 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.serviceImpl.EmployeeeServiceImple-Find Employee Service Imple class running
+12:19:06:537 [http-nio-808-exec-5] INFO  com.cts.emp.Employe.controll.EmployeController-Get Employee controller running time 11 ms
+12:19:08:925 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.controll.EmployeController-Update Employee address controller running
+12:19:08:926 [http-nio-808-exec-8] INFO  com.cts.emp.Employe.controll.EmployeController-Utkarsh

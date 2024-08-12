@@ -19,15 +19,15 @@ public class Addresss {
 //	@ManyToOne
 //	@JsonBackReference
 //	public Employeee employee;
-//	@Override
-//	   public String toString() {
-//	       return "Address{" +
-//	               "id=" + id +
-//	               ", city='" + city + '\'' +
-//	               ", state='" + state + '\'' +
-//	               ", employeeId=" + (employee != null ? employee.getId() : "null") +
-//	               '}';
-//	   }
+	@Override
+	   public String toString() {
+	       return "Address{" +
+	               "id=" + id +
+	               ", city='" + city + '\'' +
+	               ", state='" + state + '\'' +
+	               ", employeeId=" + (employee != null ? employee.getId() : "null") +
+	               '}';
+	   }
 	@ManyToOne
 	@JsonBackReference
 	public Employeee employee;

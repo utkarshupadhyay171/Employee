@@ -9,6 +9,10 @@ import lombok.Data;
 public class Registerdto {
 	@NotEmpty(message="Name can not be empty")
 	String name;
+	@NotEmpty(message="Email must not be empty")
+	public String email;
+//	@NotEmpty(message="Phone No must not be empty")
+	public String phoneNo;
 	@NotEmpty(message="Password can not be empty")
 	String password;
 	@NotEmpty(message="Age can not be empty")
