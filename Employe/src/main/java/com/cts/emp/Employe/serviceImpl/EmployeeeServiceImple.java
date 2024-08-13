@@ -259,11 +259,11 @@ public class EmployeeeServiceImple implements EmployeeeService {
 			
 		}
 		Employeee employee=employeeRepository.findByName(login.getName());
-		if(employee.getPassword().equals(login.getPassword()))
+		if(!employee.getPassword().equals(login.getPassword()))
 		{
-			return ResponseEntity.ok("Logged in");
+			throw new EmployeNotFoundException("Wrong Id Or Password");
 		}
-		return ResponseEntity.ok("Password");
+		return ResponseEntity.ok("Logged In");
 	}
 	
 	
